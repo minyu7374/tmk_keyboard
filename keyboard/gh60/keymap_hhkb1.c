@@ -31,7 +31,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-----------------------------------------------------------|
      * |      |VoD|VoU|Mut|Ejc|   |  *|  /|Hom|PgU|Lef|Rig|Enter   |
      * |-----------------------------------------------------------|
-     * |        |   |   |   |   |   |  +|  -|End|PgD|Dow|      |   |
+     * |        |Fn1|Fn2|Fn3|   |   |  +|  -|End|PgD|Dow|      |   |
      * |-----------------------------------------------------------|
      * |    |    |    |                        |    |Stop |Menu|   |
      * `-----------------------------------------------------------'
@@ -40,18 +40,18 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,  \
         CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PSCR,SLCK,PAUS,UP,  TRNS,BSPC,      \
         TRNS,VOLD,VOLU,MUTE,EJCT,TRNS,PAST,PSLS,HOME,PGUP,LEFT,RGHT,     PENT,      \
-        TRNS,FN1, FN2, FN3, FN4, FN5, PPLS,PMNS,END, PGDN,DOWN,     TRNS,TRNS,      \
+        TRNS,FN1, FN2, FN3, TRNS, TRNS, PPLS,PMNS,END, PGDN,DOWN,     TRNS,TRNS,      \
         TRNS,TRNS,TRNS,          TRNS,                    TRNS,MSTP,APP,TRNS),
 
     /* 2: mouse layer
      * ,-----------------------------------------------------------.
      * |Esc| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Ins|Del|
      * |-----------------------------------------------------------|
-     * |Tab  |   |McU|   |   |   |   |   |Ac0|Ac1|Ac2|McU|   |Bspc |
+     * |Tab  |   |McU|   |Ac0|   |Ac2|Ac1|Ac0|Ac1|Ac2|McU|   |Bspc |
      * |-----------------------------------------------------------|
-     * |Ctrl  |McL|McD|McR|   |   |MwL|MwD|MwU|MwR|McL|McR|Enter   |
+     * |Ctrl  |McL|McD|McR|Ac1|   |MwL|MwD|MwU|MwR|McL|McR|Enter   |
      * |-----------------------------------------------------------|
-     * |Shift   |Ac0|Ac1|Ac2|    |Mb3|Mb2|Mb1|Mb4|Mb5|McD|Shift |  |
+     * |Shift   |   |   |   |Ac2|Mb3|Mb2|Mb1|Mb4|Mb5|McD|Shift |   |
      * |-----------------------------------------------------------'
      * |    |Gui |Alt  |Mb1                     |    |Gui |Menu|   |
      * `-----------------------------------------------------------'
@@ -61,7 +61,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ESC, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,  \
         TAB, TRNS,MS_U,TRNS,ACL0,TRNS,ACL2,ACL1,ACL0,ACL1,ACL2,MS_U,TRNS,BSPC,      \
         LCTL,MS_L,MS_D,MS_R,ACL1,TRNS,WH_L,WH_D,WH_U,WH_R,MS_L,MS_R,     PENT,      \
-        LSFT,ACL0,ACL1,ACL2,TRNS,BTN3,BTN2,BTN1,BTN4,BTN5,MS_D,     RSFT,TRNS,      \
+        LSFT,TRNS,TRNS,TRNS,ACL2,BTN3,BTN2,BTN1,BTN4,BTN5,MS_D,     RSFT,TRNS,      \
         TRNS,LGUI,LALT,          BTN1,               TRNS,RGUI,APP,TRNS),
 };
 
