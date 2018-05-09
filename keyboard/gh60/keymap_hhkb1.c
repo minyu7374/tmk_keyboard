@@ -47,21 +47,21 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-----------------------------------------------------------.
      * |Esc| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Ins|Del|
      * |-----------------------------------------------------------|
-     * |Tab  |   |McU |   |   |   |MwL|MwD|MwU|MwR|   |   |   |Bspc|
+     * |Tab  |   |McU|   |   |   |   |   |Ac0|Ac1|Ac2|McU|   |Bspc |
      * |-----------------------------------------------------------|
-     * |Contl|McL|McD |McR|   |   |McL|McD|McU|McR|   |   |Enter   |
+     * |Ctrl  |McL|McD|McR|   |   |MwL|MwD|MwU|MwR|McL|McR|Enter   |
      * |-----------------------------------------------------------|
-     * |Shift   |Ac0|Ac1|Ac2|    |Mb3|Mb2|Mb1|Mb4|Mb5|  |Shift |   |
+     * |Shift   |Ac0|Ac1|Ac2|    |Mb3|Mb2|Mb1|Mb4|Mb5|McD|Shift |  |
      * |-----------------------------------------------------------'
-     * |    |Gui |Alt  |Mb1                     |    |RGui|Menu|   |
+     * |    |Gui |Alt  |Mb1                     |    |Gui |Menu|   |
      * `-----------------------------------------------------------'
      * Mc: Mouse Cursor / Mb: Mouse Button / Mw: Mouse Wheel
      * */
     KEYMAP_HHKB(
         ESC, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,  \
-        TAB, TRNS,MS_U,TRNS,TRNS,TRNS,MS_L,MS_D,MS_U,MS_R,TRNS,TRNS,TRNS,BSPC,      \
-        LCTL,MS_L,MS_D,MS_R,TRNS,TRNS,WH_L,WH_D,WH_U,WH_R,TRNS,TRNS,     PENT, \
-        LSFT,TRNS,ACL0,ACL1,ACL2,BTN3,BTN2,BTN1,BTN4,BTN5,TRNS,RSFT,TRNS, \
+        TAB, TRNS,MS_U,TRNS,ACL0,TRNS,ACL2,ACL1,ACL0,ACL1,ACL2,Ms_U,TRNS,BSPC,      \
+        LCTL,MS_L,MS_D,MS_R,ACL1,TRNS,WH_L,WH_D,WH_U,WH_R,MS_L,MS_R,     PENT,      \
+        LSFT,ACL0,ACL1,ACL2,TRNS,BTN3,BTN2,BTN1,BTN4,BTN5,MS_D,     RSFT,TRNS,      \
         TRNS,LGUI,LALT,          BTN1,               TRNS,RGUI,APP,TRNS),
 };
 
