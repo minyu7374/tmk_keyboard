@@ -25,7 +25,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         NO,  LALT,LGUI,          SPC,                     NO,  RGUI,RALT,NO),
     /* 1: HHKB Fn layer
      * ,-----------------------------------------------------------.
-     * |Pwr| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Ins|Del|
+     * |Slep|F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Ins|Del|
      * |-----------------------------------------------------------|
      * |Caps |Nxt|Prv|Stp|Ply|Sel|   |   |Psc|Slk|Pus|Up |   |Bspc |
      * |-----------------------------------------------------------|
@@ -33,15 +33,15 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-----------------------------------------------------------|
      * |        |Fn1|Fn2|Fn3|   |   |  +|  -|End|PgD|Dow|      |   |
      * |-----------------------------------------------------------|
-     * |    |    |    |                        |    |Stop |Menu|   |
+     * |    |    |    |                        |    |Wake |Menu|   |
      * `-----------------------------------------------------------'
      */
     KEYMAP_HHKB(
-        PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,  \
+        SLEP,F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL,  \
         CAPS,MNXT,MPRV,MSTP,MPLY,MSEL,TRNS,TRNS,PSCR,SLCK,PAUS,UP,  TRNS,BSPC,      \
         TRNS,VOLD,VOLU,MUTE,EJCT,TRNS,PAST,PSLS,HOME,PGUP,LEFT,RGHT,     PENT,      \
-        TRNS,FN1, FN2, FN3, TRNS, TRNS, PPLS,PMNS,END, PGDN,DOWN,     TRNS,TRNS,      \
-        TRNS,TRNS,TRNS,          TRNS,                    TRNS,MSTP,APP,TRNS),
+        TRNS,FN1, FN2, FN3, TRNS, TRNS, PPLS,PMNS,END, PGDN,DOWN,     TRNS,TRNS,    \
+        TRNS,TRNS,TRNS,          TRNS,                    TRNS,WAKE,APP,TRNS),
 
     /* 2: mouse layer
      * ,-----------------------------------------------------------.
